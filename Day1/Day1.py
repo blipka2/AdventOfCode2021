@@ -14,7 +14,7 @@ def depthIncreases(entry):
     if len(entry) <= 1: 
         return counter
     else:
-        for i in range(0, len(entry) - 1):
+        for i in range(len(entry) - 1):
             if entry[i] < entry[i + 1]:
                 counter += 1
     return counter
